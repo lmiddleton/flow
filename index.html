@@ -2,48 +2,33 @@
 <html lang="en">
 <head>
 	<title>Flow</title>
+	<!-- CSS -->
 	<link rel="stylesheet" type="text/css" href="js/jquery-verbose-calendar/jQuery-Verbose-Calendar-master/stylesheets/main.css">
-	<link rel="stylesheet" type="text/css" href="assets/moon-phase-3/flaticon.css">
+	<link rel="stylesheet" type="text/css" href="assets/moon-phase-3/flaticon-mod.css">
 	<link rel="stylesheet" type="text/css" href="js/jquery-verbose-calendar/jQuery-Verbose-Calendar-master/javascripts/jquery.calendar/calendar.css">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<!-- JavaScript -->
 	<!-- <script src="js/jquery/jquery-1.11.1.min.js"></script> -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
-	<script src="js/jquery-verbose-calendar/jQuery-Verbose-Calendar-master/javascripts/jquery.calendar/jquery.calendar.min.js"></script>
+	<script src="js/jquery-verbose-calendar/jQuery-Verbose-Calendar-master/javascripts/jquery.calendar/jquery.calendar-mod.js"></script>
+	<script src="js/dummy-data.js"></script>
 	<script src="js/main.js"></script>
-	
-	<style>
-		body {
-			background-image: none;
-		}
-		
-		.label {
-		
-		}
-		
-		.day {
-			border: solid 1px;
-			/*height: 60px !important;
-			width: 100px !important;*/
-		}
-		
-		.bold {
-			border: solid 1px;
-		}
-		
-		.heavy {
-			background-color: #E60000;
-		}
-		
-		.medium {
-			background-color: #FF4D4D;
-		}
-		
-		.light {
-			background-color: #FFB2B2;
-		}
-	</style>
 </head>
 <body>
-		<div id="calendar-container" style="float: left; width: 75%; background-color: white;"></div>
-		<div id="control-panel" style="float: right; width: 25%; background-color: white; vertical-align: top; height: 100%; position: fixed; right: 0; top: 0; border-left: solid 1px; font-size: 60px;"></div>
+		<div id="calendar-container"></div>
+		<div id="control-panel">
+			<input id="flow" type="checkbox" />
+			<label for="flow">Flow</label>
+			<br />
+			<input id="moon" type="checkbox" />
+			<label for="moon">Moon</label>
+			<br />
+			<input id="weight" type="checkbox" />
+			<label for="weight">Weight</label>
+			<br />
+			<input id="exercise" type="checkbox" />
+			<label for="exercise">Exercise</label>
+			<br />
+		</div>
 </body>
 </html>

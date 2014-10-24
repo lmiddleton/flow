@@ -1,0 +1,2 @@
+var DUMMY_DATA = {
+}

@@ -1,0 +1,40 @@
+body {
+	background-image: none;
+}
+
+#calendar-container {
+	float: left;
+	width: 75%;
+}
+
+#control-panel {
+	border-left: solid 1px;
+	float: right;
+	height: 100%;
+	position: fixed;
+	right: 0;
+	top: 0;
+	vertical-align: top;
+	width: 25%;
+}
+
+.day {
+	border: solid 1px;
+}
+		
+.bold {
+	border: solid 1px;
+}
+
+/* Flow */	
+.heavy {
+	background-color: #E60000;
+}
+		
+.medium {
+	background-color: #FF4D4D;
+}
+		
+.light {
+	background-color: #FFB2B2;
+}
