@@ -171,14 +171,17 @@
 					}
 				}
 
-				// check for flow
-				var flow = pl.options.flow.call()
+				// check for flow - maybe absract this to any number of properties and the classes to attach??
+				var theDate = (parseInt(i) + 1) + '/' + j + '/' + the_year;
+				//console.log(theDate);
+				var flow = pl.options.flow.call(this, theDate);
+				//console.log(flow);
 				var flowClass = '';
 				if(flow != 'none') flowClass = flow;
 
 				//
 				// Looping over numbers, apply them to divs
-				$_calendar.append("<div data-date='" + (parseInt(i) + 1) + '/' + j + '/' + the_year + "' class='label day " + today + flow + "'>" + j + '</div>');
+				$_calendar.append("<div data-date='" + theDate + "' class='label day " + today + flow + "'>" + j + '</div>');
 			}
 
 			//

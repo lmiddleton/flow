@@ -1,2 +1,0 @@
-var DUMMY_DATA = {
-}
